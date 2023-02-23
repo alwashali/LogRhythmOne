@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"log"
 	"os"
@@ -9,6 +10,23 @@ import (
 )
 
 var app = cli.NewApp()
+
+func init() {
+	path := "secrets/users"
+	if _, err := os.Stat(path); errors.Is(err, os.ErrNotExist) {
+		err := os.MkdirAll(path, os.ModePerm)
+		if err != nil {
+			log.Println(err)
+		}
+	}
+	path = "secrets/logrhythms"
+	if _, err := os.Stat(path); errors.Is(err, os.ErrNotExist) {
+		err := os.Mkdir(path, os.ModePerm)
+		if err != nil {
+			log.Println(err)
+		}
+	}
+}
 
 func info() {
 	app.Name = "Unified LogRhythm API"
