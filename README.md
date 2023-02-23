@@ -1,5 +1,5 @@
 # LogRhythmOne
-Controle Multiple LogRhythm SIEMs Alert and Cases from Single API
+Controle Multiple LogRhythm SIEMs Alert and Cases from a Single API
 
 The tool is written to control multiple LogRhythm SIEMs cases and alerts from one place. The need for an easy way to search for IOCs or keywords in all SIEMS Cases and Alarms content. The tool basically replicate one API similar to the LogRhythm default API to multiple instances of LogRhythm. 
 
