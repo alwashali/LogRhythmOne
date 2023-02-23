@@ -41,7 +41,7 @@ The need is for companies such as MSSP that manage many LogRhythms SIEMs
 
 
 ```
-go get -u github.com/alwashali/LogRhythmOne
+go install github.com/alwashali/LogRhythmOne@latest
 
 ```
 
