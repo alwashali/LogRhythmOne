@@ -1,4 +1,4 @@
-module Go-LRSearch
+module github.com/alwashali/LogRhythmOne
 
 go 1.19
 
