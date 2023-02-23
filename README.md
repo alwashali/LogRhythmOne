@@ -7,7 +7,24 @@ The tool is written to control multiple LogRhythm SIEMs cases and alerts from on
 
 ## Table of Contents
 
-
+ - [LogRhythmOne](#logrhythmone)
+  * [Table of Contents](#table-of-contents)
+  * [Use Cases](#use-cases)
+  * [Installation](#installation)
+  * [How to use it](#how-to-use-it)
+  * [Usage](#usage)
+  * [SIEM Configuration](#siem-configuration)
+- [**Authentication**](#--authentication--)
+  * [Token Authentication](#token-authentication)
+    + [Example](#example)
+  * [User authentication](#user-authentication)
+    + [Example](#example-1)
+- [Run API Server](#run-api-server)
+- [API Docs](#api-docs)
+  * [Cases API](#cases-api)
+  * [Case API](#case-api)
+  * [Alarms API](#alarms-api)
+  * [Alarm API](#alarm-api)
  
 The need is for companies such as MSSP that manage many LogRhythms SIEMs 
 
@@ -28,7 +45,7 @@ go get -u github.com/alwashali/LogRhythmOne
 
 ```
 
-## **How to use it**
+## How to use it
 
 In order to be able to control multiple SIEMs, host information and token need to be added to the configuration as well as a LogRhythmOne token with permission to interact with the added SIEMs. 
 
@@ -172,7 +189,7 @@ LogRhythmOne.exe run
 
 Most important part in the request is the **name** header. It contains the names of LogRhythm SIEMs to be queried or ‘all’ to query all allowed SIEMs. 
 
-### Cases API
+## Cases API
 
 ```
 GET /cases
@@ -190,7 +207,7 @@ Get /case/[id]
 
 Case API to fetch a particular case by ID. SIEM instance name must be set in **name** header.
 
-### Alarms API
+## Alarms API
 
 ```
 GET /alarms
