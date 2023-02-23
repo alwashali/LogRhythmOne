@@ -26,7 +26,6 @@ The tool is written to control multiple LogRhythm SIEMs cases and alerts from on
   * [Alarms API](#alarms-api)
   * [Alarm API](#alarm-api)
  
-The need is for companies such as MSSP that manage many LogRhythms SIEMs 
 
 ## Use Cases
 
