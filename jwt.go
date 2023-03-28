@@ -21,7 +21,7 @@ type Claims struct {
 	jwt.StandardClaims
 }
 
-var jwtKey = []byte("SecRetDKeyABC$#BC@")
+var jwtKey = []byte("Change_me_$#BC@")
 
 func generateJWT(u *User) (string, error) {
 
